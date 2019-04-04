@@ -1,0 +1,32 @@
+<% include ./partials/header %>
+
+<div class = "container" style = "padding-top : 30px;">
+    <div class = "row">
+        <h1 style = "text-align : center; color:gray;">FORM</h1>
+        <div id = "form">
+          <form action = "/user-form" method = "POST">
+              <div class = "form-group">
+                  <label>NAME</label>
+                  <input class = "form-control" type = "username" name = "name" required>
+              </div>
+              <div class = "form-group">
+                  <label>EMAIL</label>
+                  <input class = "form-control" type = "email" name = "email" required>
+              </div>
+              <div class = "form-group">
+                  <label>DATE OF BIRTH</label>
+                  <input class = "form-control" type = "date" min = "1950-01-01" max = "2019-01-01" name = "birth" required>
+              </div>
+              <div class = "form-group">
+                  <label>CONTACT NUMBER</label>
+                  <input class = "form-control" type = "tel" name = "number" minlength="10" maxlength="10" required>
+              </div>
+              <div class = "form-group">
+                  <button class = "btn btn-lg btn-success btn-block">SUBMIT</button>
+              </div>
+          </form>  
+        </div>
+    </div>
+</div>
+
+<% include ./partials/footer %>
