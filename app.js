@@ -5,7 +5,7 @@ var bodyParser = require("body-parser");
 var Form = require("./models/form");
         //==========APP CONFIG=========//
 app.set("view engine", "ejs");
-mongoose.connect("mongodb+srv://uday26:Uday1234@cluster0-8hunn.mongodb.net/test?retryWrites=true");
+mongoose.connect("mongodb+srv://<username>:<password>@cluster0-8hunn.mongodb.net/test?retryWrites=true");
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(express.static(__dirname + "/public"));
 
